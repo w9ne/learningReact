@@ -5,7 +5,7 @@ const profile = [
   {
     id: 1,
     name: "Amos",
-    imageUrl: "/images/avatar.png",
+    imageUrl: "/images/flower.jpg",
     description: "This is loop 1, ID of 1"
   },
   {
@@ -17,7 +17,7 @@ const profile = [
   {
     id: 3,
     name: "Sabrina",
-    imageUrl: "/images/avatar.png",
+    imageUrl: "/images/stamp.jpg",
     description: "This is loop 3, ID of 3"
   }
 ]
