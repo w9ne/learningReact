@@ -3,8 +3,8 @@ import Bio from './Bio';
 
 function ProfileCard({ name, imageUrl, description }) {
   return (
-    <div style={{ border: '1px solid gray', padding: '16px' }}>
-      <Avatar name={name} imageUrl={imageUrl} />
+    <div style={{ border: '1px solid gray', padding: '80px' }}>
+      <Avatar name={"Jared"} imageUrl={"public/images/avatar.png"} />
       <Bio description={description} />
     </div>
   );
