@@ -1,26 +1,42 @@
 import { useState } from 'react';
+import ProfileCard from './ProfileCard';
+
+const profile = [
+  {
+    id: 1,
+    name: "Amos",
+    imageUrl: "/images/avatar.png",
+    description: "This is loop 1, ID of 1"
+  },
+  {
+    id: 2,
+    name: "Jared",
+    imageUrl: "/images/avatar.png",
+    description: "This is loop 2, ID of 2"
+  },
+  {
+    id: 3,
+    name: "Sabrina",
+    imageUrl: "/images/avatar.png",
+    description: "This is loop 3, ID of 3"
+  }
+]
 
 function App() {
   return (
     <div>
       <h1>Hello world!</h1>
       <p>Running this on my Steam Deck!</p>
+      {profile.map(person => (
+      <ProfileCard
+      key = {person.id}
+      name = {person.name}
+      imageUrl={person.imageUrl}
+      description={person.description}
+      />
+      ))}
     </div>
+    
   )
 }
-
-function ProfileCard({ name, imageUrl, description }) {
-  const [isFollowing, setIsFollowing] = useState(false);
-
-  return (
-    <div style={{ border: '1px solid gray', padding: '16px' }}>
-      <p>{name}</p>
-      <p>{description}</p>
-      <button onClick={() => setIsFollowing(!isFollowing)}>
-        {isFollowing ? 'Unfollow' : 'Follow'}
-      </button>
-    </div>
-  );
-}
-
 export default App
