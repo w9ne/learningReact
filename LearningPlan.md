@@ -39,15 +39,15 @@
 - Create a multi-page frontend layout
 
 ## Resources
-- React Router Documentation
+- React Router Documentation 
 - React Forms Tutorials
 - Practice building navigation menus and forms
 
 ## Milestones
-- Build a frontend with multiple pages
-- Create reusable layout components
-- Implement form handling
-- Use React Router successfully
+- Build a frontend with multiple pages (DONE)
+- Create reusable layout components (DONE)
+- Implement form handling (DONE)
+- Use React Router successfully (DONE)
 
 ---
 

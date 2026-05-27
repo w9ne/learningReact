@@ -7,7 +7,7 @@ function Navbar() {
       display: 'flex',
       gap: '16px',
       padding: '16px',
-      backgroundColor: '#333',
+      background: 'linear-gradient(to right, #1f0808, #010a13)',
     }}>
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
