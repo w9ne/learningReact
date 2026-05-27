@@ -23,9 +23,9 @@
 ## Milestones
 - Install Node.js and React successfully (DONE!!!)
 - Create and run a React app using Vite (DONE!!)
-- Create at least 3 reusable components
-- Use props and state correctly
-- Push working code to GitHub
+- Create at least 3 reusable components (DONE)
+- Use props and state correctly (DONE)
+- Push working code to GitHub (DONE)
 
 ---
 
