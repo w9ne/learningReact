@@ -4,8 +4,8 @@ const ThemeContext = createContext();
 //move inline here instead
 const themes = {
   light: {
-    nav: 'linear-gradient(to right, #f0f0f0, #ffffff)',
-    background: '#ffffff',
+    nav: 'linear-gradient(to right, #87b7ff, #fd8989)',
+    background: '#ffffff0c',
     text: '#111111',
   },
   dark: {
