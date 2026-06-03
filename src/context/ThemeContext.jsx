@@ -6,12 +6,10 @@ const themes = {
   light: {
     nav: 'linear-gradient(to right, #87b7ff, #fd8989)',
     background: '#ffffff0c',
-    text: '#111111',
   },
   dark: {
     nav: 'linear-gradient(to right, #1f0808, #010a13)',
     background: '#111111',
-    text: '#ffffff',
   },
 };
 
