@@ -16,3 +16,10 @@
 - Used react route to connect with pages
 - Reformatted folders to fix better jsx layout
 - Learnt how to use inline styling 
+
+# React Tutorial Week 4 (DONE)
+
+- Create useState and useEffect functions
+- Add search bar using filtered lists
+- Add hooks for toggling
+- Add theme context for Navbar
