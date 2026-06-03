@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import ProfileCard from '../components/ProfileCard';
 import SearchBar from '../components/SearchBar';
 
@@ -66,10 +67,16 @@ function Home() {
     person.name.toLowerCase().includes(query.toLowerCase())
   );
 
+    useEffect(() => {
+    document.title = `${resultCount} profiles found!`; 
+  }, [filtered]); // [] is the dependency
+  const resultCount = filtered.length; // assign to var
+
   return (
     <div>
       <h1>Hello world!</h1>
       <p>Running this on my Steam Deck!</p>
+      <p>{resultCount} profiles found</p>
       <SearchBar query={query} onChange={setQuery} />
       {filtered.map(person => (
         <ProfileCard
