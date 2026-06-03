@@ -5,14 +5,13 @@ export default function Navbar() {
   const { theme, toggle } = useTheme();
 
   //restructure nav bar logic to add dark/light mode
+  //moved to themecontext instead for better structuring
   return (
     <nav style={{
-      background: theme === 'dark'
-        ? 'linear-gradient(to right, #1f0808, #010a13)'
-        : 'linear-gradient(to right, #f0f0f0, #ffffff)',
-      display: 'flex',
-      gap: '16px',
-      padding: '16px',
+      background: styles.nav, 
+      display: 'flex', 
+      gap: '16px', 
+      padding: '16px'
     }}>
       <button onClick={toggle}>
         {theme === 'dark' ? 'Light mode' : 'Dark mode'}
