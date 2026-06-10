@@ -25,7 +25,7 @@ function Login() {
       const data = await res.json();
       console.log('API response:', data);
 
-      if (!res.ok) throw new Error(data.error || 'Login failed');
+      if (!res.ok) throw new Error(data.error || 'Invalid logon');
 
       //to access token and shot its confirmed
       localStorage.setItem('token', data.accessToken);
@@ -40,28 +40,32 @@ function Login() {
   };
 
   return (
-    <div>
+  <div className="login-container">
+    <div className="login-card">
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <input
+          className="login-input"
           type="text"
-          placeholder="Email"
+          placeholder="Username"
           value={email}
           onChange={e => setEmail(e.target.value)}
         />
         <input
+          className="login-input"
           type="password"
           placeholder="Password"
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-        {error && <p>{error}</p>}
-        <button type="submit" disabled={loading}>
-          {loading ? 'Attempting Login' : 'Login'}
+        {error && <p className="login-error">{error}</p>}
+        <button className="login-button" type="submit" disabled={loading}>
+          {loading ? 'Logging in...' : 'Login'}
         </button>
       </form>
     </div>
-  );
+  </div>
+);
 }
 
 export default Login;
