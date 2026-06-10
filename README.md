@@ -23,3 +23,11 @@
 - Add search bar using filtered lists
 - Add hooks for toggling
 - Add theme context for Navbar
+
+# React Tutorial Week 5 (DONE)
+
+- Added Fake API connection for testing and works well
+- Created logon page together with protected routes 
+- Saved tokens for login and logout to delete said token
+- Learnt how to connect API with the front end using routes
+- Learnt how to properly secure pages from being accessed
