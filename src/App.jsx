@@ -4,16 +4,29 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" to={Login} element={<Login />} />
+        <Route path="/" element={
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        } />
+        <Route path="/about" element={
+          <ProtectedRoute>
+            <About />
+          </ProtectedRoute>
+        } />
+        <Route path="/contact" element={
+          <ProtectedRoute>
+            <Contact />
+          </ProtectedRoute>
+        } />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   );

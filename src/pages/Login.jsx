@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
@@ -6,6 +7,7 @@ function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate(); //redirect to home page after login
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,6 +30,7 @@ function Login() {
       //to access token and shot its confirmed
       localStorage.setItem('token', data.accessToken);
       console.log('Token saved!');
+      navigate('/'); //navigation
 
     } catch (err) {
       setError(err.message);
