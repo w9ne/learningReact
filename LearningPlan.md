@@ -54,7 +54,7 @@
 # Week 4 — Connecting to APIs
 
 ## Goals
-- Learn fetch API and async requests
+- Learn fetch API and async requests (DONE)
 - Connect React frontend to REST API
 - Display API data dynamically
 - Handle loading and error states
@@ -98,3 +98,10 @@
 # Final Goal
 
 By the end of week 5, I will have a working React frontend capable of connecting to my REST API, authenticating users, and displaying dynamic data from the backend.
+
+---
+
+# Learn Front End 5 Reflection
+- Changed up the plan to move towards working to the Final Project
+- Worked to connect API with front end and have a workable login page
+- Saved tokens will be stored on localstorage
